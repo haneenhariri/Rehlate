@@ -12,7 +12,7 @@ export default function ServiceCard({
     <div className="service-card relative flex max-w-[263px] flex-col items-center text-center">
       {arrow ? arrow : ""}
       <div className="img-container">
-        <img src={image} alt="" />
+        <img src={image} alt={title} />
       </div>
       <div className="card-content">
         <h3 className="text-main-black mt-8 mb-4 text-2xl font-black">

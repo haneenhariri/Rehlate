@@ -1,6 +1,6 @@
 import Img1 from "./../assets/services-image-1.png";
-import Img2 from "./../assets/services-image-2.png";
-import Img3 from "./../assets/services-image-3.png";
+import Img2 from "./../assets/services-image-2.webp";
+import Img3 from "./../assets/services-image-3.webp";
 import Arrow from "./../assets/arrow.svg";
 
 export const servicesData = [

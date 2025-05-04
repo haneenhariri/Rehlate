@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.cdnfonts.com/css/lama-sans');
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font-lama);
+}
+
+@theme {
+    --font-lama: "Lama Sans", sans-serif; 
+
+    --color-main-gray: #A5A5A5;
+    --color-main-black: #191919;
+    --color-main-yellow: #FEC430;
+    --color-footer-title: #FFF9EA;
+    --color-footer-text: #797979;
+
+}
+
+@layer utilities {
+    @keyframes shadowPulse {
+      0%, 100% {
+        box-shadow: 0 0 2px rgba(85, 84, 84, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 15px rgba(24, 22, 22, 0.4);
+      }
+    }
+    .animate-shadowPulse {
+      animation: shadowPulse 2s ease-in-out infinite;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(380px * 4)); }
+    }
+    @keyframes slideEn {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-380px * 4)); }
+    }
+    @keyframes slide-sm {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(235px * 4)); }
+    }
+  
+    .animate-slide {
+      animation: slide 50s linear infinite;
+    }
+    .animate-slideEn {
+      animation: slideEn 50s linear infinite;
+    }
+
+  }
